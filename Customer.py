@@ -50,7 +50,8 @@ class Car :
         self.number_plate = number_plate
         self.motor_power = motor_power
         self.year = year
-    
+    def __repr__(self):
+        return self.number_plate
     #converts to JSON
     def serialize(self):
         return {
